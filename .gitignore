@@ -4,5 +4,23 @@ NEXT_STEPS.ipynb
 centinela_lst_env.yml
 Sentinel_Hub_Statistical_API/
 textfiles/OAuthcredentials.txt
+<<<<<<< HEAD
 source/__pycache__/
 __pycache__/
+=======
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore OS/system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/editor files
+.vscode/
+.idea/
+>>>>>>> bc2b556847c3e8fb4ec1d4618baf85cb5e2c9371
