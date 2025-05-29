@@ -1,4 +1,4 @@
-name: /mnt/d/Python_environments/centinela_lst_env
+name: centinela_lst_env
 channels:
   - conda-forge
   - defaults
