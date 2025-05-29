@@ -62,7 +62,7 @@ def build_json_request(geometry, start_date, end_date, day_interval, data_set):
         "data": [
         {
             "dataFilter": {},
-            "type": data_set # data id
+            "type": "byoc-" + data_set # data id
         }
         ]
     },
