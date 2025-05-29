@@ -46,7 +46,7 @@ def authenticate_sentinel_hub(client_id, client_secret):
     oauth = OAuth2Session(client=client)
 
     # get an authentication token
-    token = oauth.fetch_token(token_url='https://services.sentinel-hub.com/auth/realms/main/protocol/openid-connect/token',
+    _ = oauth.fetch_token(token_url='https://services.sentinel-hub.com/auth/realms/main/protocol/openid-connect/token',
                             client_secret=client_secret, include_client_id=True)
     
     return oauth
