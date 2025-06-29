@@ -15,9 +15,9 @@ evalscript = """
 
 // LST has two observations per days: 1h30 and 13h30 solar local time
 
-const defaultVis = true; // true or false
-const color_min = 263; // default min: 263
-const color_max = 340; // default max: 340
+// const defaultVis = true; // true or false
+// const color_min = 263; // default min: 263
+// const color_max = 340; // default max: 340
 const sensing_time = "13"; // "0130" or "1330" or ""
 
 //set the data for map and timeserie
@@ -27,7 +27,7 @@ function setup() {
         output: [
             //{ id: "default", bands: 4 },
             //{ id: "index", bands: 1, sampleType: "FLOAT32" },
-            { id: "eobrowserStats", bands: 1, sampleType: "FLOAT32" },
+            { id: "LST", bands: 1, sampleType: "FLOAT32" },
             { id: "dataMask", bands: 1 }
         ],
         mosaicking: "TILE"
@@ -60,7 +60,7 @@ function evaluatePixel(samples) {
     return {
         //default: [...visualizer.process(val), datamask],
         //index: [val],
-        eobrowserStats: [val, datamask],
+        LST: [val, datamask],
         dataMask: [datamask],
     };
 }
