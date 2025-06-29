@@ -6,12 +6,17 @@ This work was financed by [OSA Conservation](https://osaconservation.org/). Plan
 
 ### 1. `01_demo_polygons.ipynb`
 - A minimal working demo that shows how to request LST Planet data from Sentinel Hub.
-- Targets four small polygons of four landcover types for testing and understanding the pipeline.
+- Obtains daily LST data accoss a single year for four small polygons of different landcover types.
 - Includes visualization of timeseries LST data.
 
+![alt text](media/readme1.png) 
+
 ### 2. `02_osa_case_study.ipynb`
-- A full case study focused on the Osa Peninsula, Costa Rica.
+- A case study focused on the Osa Peninsula, Costa Rica.
 - Retrieves LST data for 1200 sampling areas.
+- Compares LST profiles of two landcover classes for a single date.
+
+![alt text](media/readme2.png) 
 
 ## 🧰 Modules
 
